@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水獺基本介紹 | 水獺科普網站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 浮動水獺互動角色 -->
+    <div id="floatingOtter" class="floating-otter">
+        <img src="圖片/Untitled_Artwork 7.png" alt="水獺" style="width: 80px; height: 80px; pointer-events: none;">
+    </div>
+
+    <!-- 4. BACKGROUND SWIMMING OTTER (背景游泳動畫) -->
+    <div class="swimming-otter-bg">
+        <div class="swimming-otter">
+            <svg width="120" height="80" viewBox="0 0 100 60">
+                <!-- 水波紋 -->
+                <path d="M5,35 Q25,55 45,35 T85,35" stroke="#8BCAFE" stroke-width="2" fill="none" class="wave-ripple"/>
+                <!-- 水獺本體繪製 -->
+                <g transform="translate(0, 5)">
+                   <path d="M5,30 Q20,40 35,30" stroke="#7C4F2A" stroke-width="8" fill="none" />
+                   <ellipse cx="55" cy="30" rx="25" ry="14" fill="#7C4F2A" />
+                   <circle cx="80" cy="25" r="12" fill="#7C4F2A" />
+                   <circle cx="75" cy="16" r="3" fill="#7C4F2A" />
+                   <circle cx="85" cy="16" r="3" fill="#7C4F2A" />
+                   <circle cx="84" cy="22" r="1.5" fill="black" /> 
+                   <circle cx="88" cy="22" r="1.5" fill="black" />
+                   <ellipse cx="86" cy="27" rx="2" ry="1.5" fill="black" />
+                   <!-- 腳腳劃水動畫 -->
+                   <ellipse cx="60" cy="42" rx="4" ry="3" fill="#5D3A1F" class="otter-foot foot-1" />
+                   <ellipse cx="45" cy="40" rx="4" ry="3" fill="#5D3A1F" class="otter-foot foot-2" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <!-- 3. MASCOT (右下角吉祥物) -->
+    <div id="mascot" class="otter-mascot">
+        <div class="mascot-container">
+            <div class="mascot-body-wrapper">
+                <!-- 身體 -->
+                <div class="mascot-body">
+                   <!-- 耳朵 -->
+                   <div class="mascot-ear mascot-ear-left"></div>
+                   <div class="mascot-ear mascot-ear-right"></div>
+                   <!-- 臉部高光 -->
+                   <div class="mascot-face-highlight"></div>
+                   <!-- 眼睛 -->
+                   <div class="mascot-eye mascot-eye-left">
+                       <div class="mascot-eye-shine"></div>
+                   </div>
+                   <div class="mascot-eye mascot-eye-right">
+                       <div class="mascot-eye-shine"></div>
+                   </div>
+                   <!-- 鼻子與嘴巴 -->
+                   <div class="mascot-nose"></div>
+                   <div class="mascot-mouth"></div>
+                   <!-- 鬚鬚 -->
+                   <div class="mascot-whisker mascot-whisker-left"></div>
+                   <div class="mascot-whisker mascot-whisker-right"></div>
+                </div>
+                <!-- 手手 -->
+                <div class="mascot-hand mascot-hand-left"></div>
+                <div class="mascot-hand mascot-hand-right"></div>
+                <!-- 對話框 -->
+                <div class="mascot-speech-bubble">
+                    <p>你好！我是Otter！</p>
+                    <div class="speech-bubble-tail"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo"> 水獺科普</div>
+        <ul>
+            <li><a href="index.html" class="active">基本介紹</a></li>
+            <li><a href="legal.html">飼養法規</a></li>
+            <li><a href="conservation.html">保育共存</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero" style="position: relative; overflow: hidden;">
+        <!-- Background Image with Blur -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+            <img src="圖片/IMG_1503.PNG" alt="背景" style="width: 100%; height: 100%; object-fit: cover; filter: blur(3px);">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.3);"></div>
+        </div>
+        
+        <div class="hero-content reveal" style="position: relative; z-index: 1;">
+            <h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(0,0,0,0.6);">水獺是誰？</h1>
+            <p style="text-shadow: 1px 1px 3px rgba(0,0,0,0.7), -1px -1px 2px rgba(0,0,0,0.5);">河川生態中最靈活的玩水高手</p>
+        </div>
+        <div class="custom-shape-divider-bottom-1" style="position: relative; z-index: 1;">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro" class="container">
+        <div class="two-col">
+            <div class="content reveal">
+                <h2>水獺簡介</h2>
+                <p>水獺屬於鼬科，是生活在河川、湖泊、海岸的水棲哺乳動物。全球共有 13 種，每一種都有不同的體型與社交習性。</p>
+            </div>
+            <div class="visual-box reveal" style="margin-top: 3rem;">
+                <img src="圖片/IMG_1502.PNG" alt="水獺站立照片" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- 互動式數據統計 -->
+    <section class="container" style="margin: 8rem auto;">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h2>水獺知識數據</h2>
+            <p>探索關於水獺的驚人統計數字</p>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">全球種類</h3>
+                <div class="counter" data-target="13" style="color: var(--primary);">0</div>
+                <p style="font-size: 0.95rem; margin-top: 1rem;">種不同的水獺</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" data-percentage="100"></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">游泳速度</h3>
+                <div class="counter" data-target="11" style="color: var(--river-blue);">0</div>
+                <p style="font-size: 0.95rem; margin-top: 1rem;">公里/小時</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" data-percentage="75"></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">潛水時長</h3>
+                <div class="counter" data-target="8" style="color: var(--leaf-green);">0</div>
+                <p style="font-size: 0.95rem; margin-top: 1rem;">分鐘以上</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" data-percentage="60"></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">每日食量</h3>
+                <div class="counter" data-target="25" style="color: var(--primary);">0</div>
+                <p style="font-size: 0.95rem; margin-top: 1rem;">佔體重百分比</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" data-percentage="85"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body Structure Section -->
+    <section id="body-structure" class="container">
+        <h2 class="reveal" style="text-align: center; margin: 5rem 0;">身體構造</h2>
+        <div class="two-col">
+            <div class="visual-box reveal">
+                <img src="圖片/0107D.PNG" alt="身體構造圖解" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+            </div>
+            <div class="content reveal">
+                <ul class="list-check">
+                    <li>防水底毛保持體溫</li>
+                    <li>腳掌有蹼，速度快</li>
+                    <li>鬍鬚敏感能偵測水流</li>
+                    <li>尾巴協助游泳與轉向</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Behavior Section -->
+    <section id="behavior" class="container">
+        <h2 class="reveal" style="text-align: center; margin: 5rem 0;">生活習性</h2>
+        <div class="card-grid">
+            <div class="card reveal">
+                <h4>社交行為</h4>
+                <p>喜歡群體生活，彼此協助覓食與玩耍</p>
+            </div>
+            <div class="card reveal">
+                <h4>高度好奇</h4>
+                <p>會翻石頭或收集小物</p>
+            </div>
+            <div class="card reveal">
+                <h4>肉食性</h4>
+                <p>以魚類、蝦類、兩棲類為食</p>
+            </div>
+            <div class="card reveal">
+                <h4>水中高手</h4>
+                <p>擅長長時間閉氣與追逐</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Likes / Dislikes Section -->
+    <section id="likes_dislikes" class="container">
+        <h2 class="reveal" style="text-align: center;margin: 5rem">水獺喜歡什麼？討厭什麼？</h2>
+        <div class="two-col">
+            <div class="card reveal" style="background: linear-gradient(145deg, #ffffff, #f0fdf4); border-left: 5px solid var(--leaf-green);">
+                <h3 style="color: var(--leaf-green);">喜歡</h3>
+                <ul style="list-style: none; padding-left: 30px;">
+                    <li style="margin-bottom: 8px;">✓ 淺水與緩流河川</li>
+                    <li style="margin-bottom: 8px;">✓ 光滑的小石頭</li>
+                    <li style="margin-bottom: 8px;">✓ 同伴一起玩水</li>
+                    <li style="margin-bottom: 8px;">✓ 乾淨的河岸與植被</li>
+                </ul>
+            </div>
+            <div class="card reveal" style="background: linear-gradient(145deg, #ffffff, #fef2f2); border-left: 5px solid #ef4444;">
+                <h3 style="color: #c62828;">討厭</h3>
+                <ul style="list-style: none; padding-left: 30px;">
+                    <li style="margin-bottom: 8px;">✗ 嘈雜環境與人類干擾</li>
+                    <li style="margin-bottom: 8px;">✗ 髒污的水源與污染</li>
+                    <li style="margin-bottom: 8px;">✗ 被單獨隔離</li>
+                    <li style="margin-bottom: 8px;">✗ 狹窄不自然的地面</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Otter Species Section -->
+    <section id="global-species" class="container">
+        <h2 class="reveal" style="text-align: center;">世界各地水獺品種</h2>
+        <p class="reveal" style="text-align: center; margin-bottom: 3rem; color: #666;">全球共有 14 種水獺分布於各大洲</p>
+        
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="card reveal">
+                <img src="圖片/sea-otter-0611-1024x726.jpg" alt="Sea Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🌊 海獺 Sea Otter</h4>
+                <p><em>Enhydra lutris</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:北太平洋沿岸,從阿拉斯加到加州</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/歐亞水獺 .jpg" alt="Eurasian Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🌍 歐亞水獺 Eurasian Otter</h4>
+                <p><em>Lutra lutra</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:歐洲、亞洲部分地區與西北非洲</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/北美水獺 .aspx.jpeg" alt="North American River Otter" style="width: 100%; height: 200px; object-fit: contain; border-radius: 8px; margin-bottom: 1rem; background: #f5f5f5;">
+                <h4>🍁 北美水獺 N. American River Otter</h4>
+                <p><em>Lontra canadensis</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:加拿大與美國的河川、湖泊及沿岸</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/巨獺.jpeg" alt="Giant Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🌴 巨獺 Giant Otter</h4>
+                <p><em>Pteronura brasiliensis</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:亞馬遜與奧里諾科河流域</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/亞洲小爪水獺 Asian Small-clawed.jpg" alt="Asian Small-clawed Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🐾 亞洲小爪水獺 Asian Small-clawed</h4>
+                <p><em>Aonyx cinereus</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:南亞與東南亞的沿岸及內陸濕地</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/江獺 Smooth-coated Otter.jpg" alt="Smooth-coated Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>✨ 江獺 Smooth-coated Otter</h4>
+                <p><em>Lutrogale perspicillata</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:南亞到東南亞的河川與濕地</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/非洲無爪水獺 African Clawless.jpeg" alt="African Clawless Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🦁 非洲無爪水獺 African Clawless</h4>
+                <p><em>Aonyx capensis</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:撒哈拉以南非洲的河川與河口</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/新熱帶水獺 Neotropical Otter.jpg" alt="Neotropical Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🌎 新熱帶水獺 Neotropical Otter</h4>
+                <p><em>Lontra longicaudis</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:從墨西哥到南美洲的淡水系統</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/斑頸水獺 Spotted-necked Hydrictis maculicollis.jpg" alt="Spotted-necked Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>⭐ 斑頸水獺 Spotted-necked</h4>
+                <p><em>Hydrictis maculicollis</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:撒哈拉以南非洲的淡水河川</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/ 毛鼻水獺 Hairy-nosed Otter.jpeg" alt="Hairy-nosed Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>👃 毛鼻水獺 Hairy-nosed Otter</h4>
+                <p><em>Lutra sumatrana</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:東南亞(罕見,分布零散)</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/海洋水獺 Marine Otter Lontra felina.webp" alt="Marine Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🌊 海洋水獺 Marine Otter</h4>
+                <p><em>Lontra felina</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:南美太平洋沿岸(秘魯與智利)</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/ 南方河獺 Southern River Otter.webp" alt="Southern River Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🇨🇱 南方河獺 Southern River Otter</h4>
+                <p><em>Lontra provocax</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:南美洲南部(智利與阿根廷)</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/剛果無爪水獺 Congo Clawless.jpeg" alt="Congo Clawless Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🌿 剛果無爪水獺 Congo Clawless</h4>
+                <p><em>Aonyx congicus</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:中非剛果河流域及周邊地區</p>
+            </div>
+            
+            <div class="card reveal">
+                <img src="圖片/安第斯水獺 Southern:Andean Otter.webp" alt="Southern Otter" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <h4>🏔️ 安第斯水獺 Southern/Andean Otter</h4>
+                <p><em>Lontra annectens</em></p>
+                <p style="font-size: 0.9rem; color: #666;">分布:南美洲(具體分布請參考物種資料)</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: #f0f9ff; border-radius: 12px;">
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.8;">
+                <strong>資料來源:</strong> IUCN SSC 水獺專家組物種列表<br>
+                詳細的國家級分布與保育狀態請參考 IUCN 紅色名錄或各物種專頁
+            </p>
+        </div>
+    </section>
+
+    <!-- Taxonomy Footer -->
+    <section class="container" style="text-align: center; font-size: 0.9rem; color: #666;">
+        <p><strong>分類系統：</strong> 種類 (河川型, 沿岸型...) | 行為 (覓食, 玩耍...)</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 水獺科普網站. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="otter-animation.js"></script>
+    <script src="interactive-effects.js"></script>
+</body>
+</html>
